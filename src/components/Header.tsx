@@ -4,7 +4,7 @@ import logo from '../../public/logo.png';
 
 export default function Header() {
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main className="relative flex flex-col items-start justify-center bg-black bg-opacity-70 w-full">
       <div className="flex">
         <Image src={logo.src} width={100} height={100} alt="logo" />
         <div>
@@ -14,6 +14,7 @@ export default function Header() {
           </p>
         </div>
       </div>
+      <p className="absolute right-0 bottom-0 p-2 text-2xl">EST. 2023</p>
     </main>
   );
 }

@@ -25,9 +25,9 @@ export default function RootLayout({
           backgroundSize: 'cover',
         }}
       >
-        <div className="bg-black bg-opacity-30 container mx-auto flex flex-col justify-center items-center h-screen max-w-6xl text-white">
+        <div className="container mx-auto flex flex-col justify-center items-center max-w-6xl text-white">
           <Header />
-          <div className="flex-grow">{children}</div>
+          <div className="flex-grow w-full mt-4">{children}</div>
           <Footer />
         </div>
       </body>
